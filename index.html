@@ -1,146 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My SVG Site</title>
-    <link rel="stylesheet" href="styles.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Material Costs</title>
+	<meta name="author" content="Gabriel Drozdov">
+	<meta name="keywords" content="Net Art, Creative Coding, Small Web, Handmade Web">
+	<meta name="description" content="barco loudly, hand-crafted websites">
+	<meta property="og:url" content="https://barcoloudly.com/">
+	<meta name="og:title" property="og:title" content="barco loudly">
+	<meta property="og:description" content="barco loudly, hand-crafted websites">
+	<meta property="og:image" content="/assets/meta/opengraph.png">
+	<link rel="icon" type="image/png" href="/assets/meta/favicon.png" />
+	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-        <!-- Left side: SVG shapes (30%) -->
-        <div class="svg-column">
-            <!-- Link to your SVG files like this: -->
-            <img src="fullTiles.svg" alt="Shape 1">
-            <img src="shape2.svg" alt="Shape 2">
-            <!-- Add more SVG files as needed -->
-        </div>
 
-        <!-- Right side: Text content (50%) -->
-        <div class="text-column">
-<p class="spaced-paragraph">The Mediterranean Sea encompasses just under 1,000,000 square miles.</p>
+	<div class="death-counter" id="deathCounter">
+		<span class="counter-number" id="counterNumber">0</span>
+		<span class="counter-label">dead or missing</span>
+	</div>
 
-<p class="spaced-paragraph">Since the dawn of nautical mobility, it has been traversed by Archaic Humans, Minoans, Mycenaeans, Phoenicians, Carthaginians, Egyptians, and Romans.</p>
+	<div class="container">
+		<img src="assets/tiles/1.jpg">
+		<img src="assets/tiles/2.jpg">
+		<img src="assets/tiles/3.jpg">
+		<img src="assets/tiles/4.jpg">
+		<img src="assets/tiles/5.jpg">
+		<img src="assets/tiles/6.jpg">
+		<img src="assets/tiles/7.jpg">
+		<img src="assets/tiles/8.jpg">
+		<img src="assets/tiles/9.jpg">
+		<img src="assets/tiles/10.jpg">
+		<img src="assets/tiles/11.jpg">
+		<img src="assets/tiles/12.jpg">
 
-<p class="spaced-paragraph">Crusaders, colonizers, traders, and tourists have all traveled its waters searching…</p>
+		<img src="assets/tiles/13.jpg">
+		<img src="assets/tiles/14.jpg">
+		<img src="assets/tiles/15.jpg">
+		<img src="assets/tiles/16.jpg">
+		<img src="assets/tiles/17.jpg">
+		<img src="assets/tiles/18.jpg">
+		<img src="assets/tiles/19.jpg">
+		<img src="assets/tiles/20.jpg">
+		<img src="assets/tiles/21.jpg">
+		<img src="assets/tiles/22.jpg">
+		<img src="assets/tiles/23.jpg">
+		<img src="assets/tiles/24.jpg">
 
-<p class="spaced-paragraph">Searching for wealth, riches, expansion, safety, connection…</p>
+		<img src="assets/tiles/25.jpg">
+		<img src="assets/tiles/26.jpg">
+		<img src="assets/tiles/27.jpg">
+		<img src="assets/tiles/28.jpg">
+		<img src="assets/tiles/29.jpg">
+		<img src="assets/tiles/30.jpg">
+		<img src="assets/tiles/31.jpg">
+		<img src="assets/tiles/32.jpg">
+		<img src="assets/tiles/33.jpg">
+		<img src="assets/tiles/34.jpg">
+		<img src="assets/tiles/35.jpg">
+		<img src="assets/tiles/36.jpg">
+		
+		<img src="assets/tiles/37.jpg">
+		<img src="assets/tiles/38.jpg">
+		<img src="assets/tiles/39.jpg">
+		<img src="assets/tiles/40.jpg">
+		<img src="assets/tiles/41.jpg">
+		<img src="assets/tiles/42.jpg">
+		<img src="assets/tiles/43.jpg">
+		<img src="assets/tiles/44.jpg">
+		<img src="assets/tiles/45.jpg">
+		<img src="assets/tiles/46.jpg">
+		<img src="assets/tiles/47.jpg">
+		<img src="assets/tiles/48.jpg">
 
-<p class="spaced-paragraph">Today, it is also the deadliest migration route in the world.</p>
+		<img src="assets/tiles/49.jpg">
+		<img src="assets/tiles/50.jpg">
+		<img src="assets/tiles/51.jpg">
+		<img src="assets/tiles/52.jpg">
+		<img src="assets/tiles/53.jpg">
+		<img src="assets/tiles/54.jpg">
+		<img src="assets/tiles/55.jpg">
+		<img src="assets/tiles/56.jpg">
+		<img src="assets/tiles/57.jpg">
+		<img src="assets/tiles/58.jpg">
+		<img src="assets/tiles/59.jpg">
+		<img src="assets/tiles/60.jpg">
 
-<p class="spaced-paragraph">Each tile you are looking at represents two months.</p>
+		<img src="assets/tiles/61.jpg">
+		<img src="assets/tiles/62.jpg">
+		<img src="assets/tiles/63.jpg">
+		<img src="assets/tiles/64.jpg">
+		<img src="assets/tiles/65.jpg">
+		<img src="assets/tiles/66.jpg">
+		<img src="assets/tiles/67.jpg">
+		<img src="assets/tiles/68.jpg">
+		<img src="assets/tiles/69.jpg">
+		<img src="assets/tiles/70.jpg">
+		<img src="assets/tiles/71.jpg">
+		<img src="assets/tiles/72.jpg">	
+		
+		<img src="assets/tiles/73.jpg">	
 
-<p class="spaced-paragraph">Each fragment within the tiles represent a human being.</p>
 
-<p class="spaced-paragraph">A man, woman, or child who died or disappeared trying to cross the Central Mediterranean Sea en route to Italy.</p>
+		<div class="descriptions">
+			<div class="description-block title-splash">
+				<h1>Material Costs</h1>
+			</div>
 
-<p class="spaced-paragraph">At its narrowest, the crossing from Tunisia or Libya to the Italian island of Lampedusa is 43 miles.</p>
+			<div class="description-block splash">
+				<h1>Abstract</h1>
+				<p>The Central Mediterranean Migration Route is the deadliest route in the world. Over 25,000 people
+					have died or gone missing in its waters over the past decade. Each fragment in these terrazzo tiles
+					represents one of those people. 3, 4, and 5 sided fragments reflect children, women, and men,
+					respectively. The incidents move linearly along the tiles, with each 6 capping a year of tragedy.
+					Each fragment's hue encodes a cause of death, with the terracotta color signifying drowning. By
+					treating data as a raw material, this embodied experience slows down comprehension in order to
+					provoke reflection and humanize the data. This project references Italian terrazzo workmanship,
+					typically found in spaces that evoke familiarity, warmth, and belonging. Those domestic qualities
+					are contrasted with the realities that these migrants are facing: feelings of foreignness, the
+					unknown, cold, far from home.</p>
+			</div>
 
-<p class="spaced-paragraph">This passage is routinely made in wooden fishing boats, inflatable dinghies, and rubber rafts.</p>
+			<div class="description-block">
+				<p>The Mediterranean Sea encompasses just under 1,000,000 square miles.</p>
+			</div>
+			<div class="description-block">
+				<p>Since the dawn of nautical mobility, it has been traversed by Archaic Humans, Minoans, Mycenaeans,
+					Phoenicians, Carthaginians, Egyptians, and Romans.</p>
+			</div>
+			<div class="description-block">
+				<p>Crusaders, colonizers, traders, and tourists have all traveled its waters searching…</p>
+			</div>
+			<div class="description-block">
+				<p>Searching for wealth, riches, expansion, safety, connection…</p>
+			</div>
+			<div class="description-block">
+				<p>Today, it is also the deadliest migration route in the world.</p>
+			</div>
+			<div class="description-block">
+				<p>Each tile you are looking at represents two months.</p>
+			</div>
+			<div class="description-block">
+				<p>Each fragment within the tiles represent a human being.</p>
+			</div>
+			<div class="description-block">
+				<p>A man, woman, or child who died or disappeared trying to cross the Central Mediterranean Sea en route
+					to Italy.</p>
+			</div>
+			<div class="description-block">
+				<p>At its narrowest, the crossing from Tunisia or Libya to the Italian island of Lampedusa is 43 miles.
+				</p>
+			</div>
+			<div class="description-block">
+				<p>This passage is routinely made in wooden fishing boats, inflatable dinghies, and rubber rafts.</p>
+			</div>
+			<div class="description-block">
+				<p>At night.</p>
+			</div>
+			<div class="description-block">
+				<p>With little to no safety or navigation equipment.</p>
+			</div>
+			<div class="description-block">
+				<p>These travelers often paid between 1,000-10,000 USD to make the crossing.</p>
+			</div>
+			<div class="description-block">
+				<p>A sum saves over years or borrowed against futures they are leaving behind.</p>
+			</div>
+			<div class="description-block">
+				<p>In many cases, the Sea is the last obstacle on their journey.</p>
+			</div>
+			<div class="description-block">
+				<p>They have often already crossed the Sahara Desert and survived detention in Libya.</p>
+			</div>
+			<div class="description-block">
+				<p>Libya's coastline has served as the primary departure point since at least 2014, when the collapse of
+					the state authority left smuggling networks operating without significant obstruction.</p>
+			</div>
+			<div class="description-block">
+				<p>The boats overcrowded far past their capacities leave from beaches outside Tripoli, Zuwara, or
+					Sabratha with engine often too small or with insufficient fuel.</p>
+			</div>
+			<div class="description-block">
+				<p>The countries of origin represented most heavily in the Missing Migrant Project's dataset are
+					Eritrea, Somalia, Nigeria, Sudan, Gambia, Senegal, Ivory Coast, and Mali.</p>
+			</div>
+			<div class="description-block">
+				<p>The deaths in this dataset are the predictable and documented consequences of a set of government
+					policy choices made over the past thirty years.</p>
+			</div>
+			<div class="description-block">
+				<p>These policies did not stop migration or decrease the desperation for it, it redirected it to
+					increasingly hazardous routes.</p>
+			</div>
+			<div class="description-block">
+				<p>In 1990, many European nations began implementing visa requirements for people from African and
+					Middle eastern countries.</p>
+			</div>
+			<div class="description-block">
+				<p>These requirements eliminated the possibility for many individuals to travel to Europe via legal
+					pathways. Instead, they turned to other methods.</p>
+			</div>
+			<div class="description-block">
+				<p>In 2017, Italy and Libya signed a Memorandum of Understanding which compensated the Libyan Coast
+					Guard for intercepting migrants trying to cross to Europe.</p>
+			</div>
+			<div class="description-block">
+				<p>These migrants were returned to Libya and placed in detention facilities run for profit by gangs of
+					human traffickers where torture, exploitation, rape, and death are systemic.</p>
+			</div>
+			<div class="description-block">
+				<p>Frontex, the EU's border agency, saw its budget increase by 150 times between 2005 and 2024.
+					Countless outlets including Der Spiegel have documented incidents where Frontex has observed boats
+					in distress without launching any rescue efforts.</p>
+			</div>
+			<div class="description-block">
+				<p>Italy is not unfamiliar with the countries these migrants are fleeing.</p>
+			</div>
+			<div class="description-block">
+				<p>From the end of the 19th century through the mid 20th century, Italy colonized Eritrea, Somalia,
+					Ethiopia, and Libya; which are countries heavily represented in the early years of the dataset.
+					Italy built infrastructure using conscripted and coerced global labor.</p>
+			</div>
+			<div class="description-block">
+				<p>Italy imposed border and extracted precious resources.</p>
+			</div>
+			<div class="description-block">
+				<p>Even after the formal end of the colonial project, the mechanism of extraction remained.</p>
+			</div>
+			<div class="description-block">
+				<p>In Eritrea and Libya especially, it left behind conditions that, decades later, would result in the
+					people now crossing the water in the opposite direction.</p>
+			</div>
+			<div class="description-block">
+				<p>Like many EU countries, Italy depends on migrant labor. The agricultural, domestic, construction, and
+					factory sectors are all substantially operated by (many of them undocumented) migrant workers.</p>
+			</div>
+			<div class="description-block">
+				<p>They are needed but simultaneously excluded.</p>
+			</div>
+			<div class="description-block">
+				<p>The border policies maintain this reality.</p>
+			</div>
+			<div class="description-block">
+				<p>The data in these tiles represent all the people that have died or gone missing on their way to
+					Italy.</p>
+			</div>
+			<div class="description-block">
+				<p>But what caused these incidents?</p>
+			</div>
+			<div class="description-block">
+				<p>Drowning accounts for the majority of the cases, which is indicated in the terracotta color.</p>
+			</div>
+			<div class="description-block">
+				<p>"Drowning" is dying through submersion and the inhalation of water.</p>
+			</div>
+			<div class="description-block">
+				<p>For many of these people, this journey is their first time encountering the Sea.</p>
+			</div>
+			<div class="description-block">
+				<p>The occurrence of drowning often begins with the boat failing either by capsizing or deflating and
+					ends in the dark water.</p>
+			</div>
+			<div class="description-block">
+				<p>Search and rescue missions along the Central Mediterranean Migration Route have been historically
+					conducted at various points by different agencies including the Italian Navy, the Italian Coast
+					Guard, Frontex, Médecins Sans Frontières, Sea-Watch, and more.</p>
+			</div>
+			<div class="description-block">
+				<p>However, since the 2017 agreement, the Italian government has increasingly restricted NGO rescue
+					vessels through physical and legal barriers.</p>
+			</div>
+			<div class="description-block">
+				<p>The colors in the surface were chosen from the material world of extraction. References are made to
+					copper ore, stone aggregate, crude oil, cotton, phosphate, iron, and manganese, which are all
+					resources sourced by Italy from the countries these migrants are coming from.</p>
+			</div>
+			<div class="description-block">
+				<p>The off-white fragments in the terrazzo tiles represent people whose cause of death is unknown.</p>
+			</div>
+			<div class="description-block">
+				<p>But the true number is undoubtedly much higher.</p>
+			</div>
+			<div class="description-block">
+				<p>If bodies disappear in the Sea, they leave no trace, even in a dataset.</p>
+			</div>
+			<div class="description-block">
+				<p>The majority of individuals in this dataset cannot be identified.</p>
+			</div>
+			<div class="description-block">
+				<p>Often they arrive without documents, or have their documents confiscated by smugglers, or even
+					discard their documents purposefully because it can be more dangerous to be knowable than unknown.
+				</p>
+			</div>
+			<div class="description-block">
+				<p>When unidentified bodies wash up on the Italian coast, they are buried in numbered graves on the
+					island of Lampedusa, or Sicily, or Calabria.</p>
+			</div>
+			<div class="description-block">
+				<p>Families and loved ones are left with no confirmation possibly forever.</p>
+			</div>
+			<div class="description-block">
+				<p>The dataset and this project do not trend toward any sort of resolution.</p>
+			</div>
+			<div class="description-block">
+				<p>The deaths are not declining.</p>
+			</div>
+			<div class="description-block">
+				<p>2023 showed the highest number of deaths and disappearances since the previous highs of 2016 and
+					2017.</p>
+			</div>
+			<div class="description-block">
+				<p>The projections for 2026 are much higher still.</p>
+			</div>
+			<div class="description-block">
+				<p>In the first quarter of 2026, the rate is already more than half of all 2025 cases.</p>
+			</div>
+			<div class="description-block">
+				<p>Terrazzo is a flooring technique that originated in 15th century Venice as a way for laborers to use
+					the waste marble and stone discarded by wealthy construction projects.</p>
+			</div>
+			<div class="description-block">
+				<p>These fragments were too small to be used on their own and so they were bound together in clay and
+					polished to a smooth surface.</p>
+			</div>
+			<div class="description-block">
+				<p>This masonry method spread across the Mediterranean into North Africa, through Libya, Eritrea, and
+					Somalia to the cities Italy was building with colonial labor in the early 1900's.</p>
+			</div>
+			<div class="description-block">
+				<p>It is a material that carries movement within its surface.</p>
+			</div>
+			<div class="description-block">
+				<p>Fragments from different places bound together into something new.</p>
+			</div>
+			<div class="description-block">
+				<p>This acts as a metaphor for the individual journeys of migrants that are bound together to form a
+					greater narrative.</p>
+			</div>
+			<div class="description-block">
+				<p>Terrazzo was invented to bind together fragments that were too small to matter on their own. These
+					discarded remnants were made whole and beautiful. These tiles carry that same sentiment. Twelve
+					years of people deemed too small to matter, bound together into a surface in memory of the many
+					moments they did not get to have.</p>
+			</div>
+			<div class="description-block splash" style="text-align: center;">
+				<p>The latest tile will not be the last.</p>
+			</div>
+		</div>
+	</div>
 
-<p class="spaced-paragraph">At night.</p>
-
-<p class="spaced-paragraph">With little to no safety or navigation equipment.</p>
-
-<p class="spaced-paragraph">These travelers often paid between 1,000-10,000 USD to make the crossing.</p>
-
-<p class="spaced-paragraph">A sum saves over years or borrowed against futures they are leaving behind.</p>
-
-<p class="spaced-paragraph">In many cases, the Sea is the last obstacle on their journey.</p>
-
-<p class="spaced-paragraph">They have often already crossed the Sahara Desert and survived detention in Libya.</p>
-
-<p class="spaced-paragraph">Libya's coastline has served as the primary departure point since at least 2014, when the collapse of the state authority left smuggling networks operating without significant obstruction.</p>
-
-<p class="spaced-paragraph">The boats overcrowded far past their capacities leave from beaches outside Tripoli, Zuwara, or Sabratha with engine often too small or with insufficient fuel.</p>
-
-<p class="spaced-paragraph">The countries of origin represented most heavily in the Missing Migrant Project's dataset are Eritrea, Somalia, Nigeria, Sudan, Gambia, Senegal, Ivory Coast, and Mali.</p>
-
-<p class="spaced-paragraph">The deaths in this dataset are the predictable and documented consequences of a set of government policy choices made over the past thirty years.</p>
-
-<p class="spaced-paragraph">These policies did not stop migration or decrease the desperation for it, it redirected it to increasingly hazardous routes.</p>
-
-<p class="spaced-paragraph">In 1990, many European nations began implementing visa requirements for people from African and Middle eastern countries.</p>
-
-<p class="spaced-paragraph">These requirements eliminated the possibility for many individuals to travel to Europe via legal pathways. Instead, they turned to other methods.</p>
-
-<p class="spaced-paragraph">In 2017, Italy and Libya signed a Memorandum od Understanding which compensated the Libyan Coast Guard for interccepting migratns trying to cross to Europe.</p>
-
-<p class="spaced-paragraph">These migrants were returned to Libya and placed in detention facilities run for profit by gangs of human traffickers where toture, exploitation, rape, and death are systemic.</p>
-
-<p class="spaced-paragraph">Frontex, the EU's border agency, saw its budget increase by 150 times between 2005 and 2024. Countless outlets including Der Spiegel have documented incidents where Frontex has observed boats in distress without launching any rescue efforts.</p>
-
-<p class="spaced-paragraph">Italy is not unfamiliar with the countries these migrants are fleeing.</p>
-
-<p class="spaced-paragraph">From the end of the 19th century through the mid 20th century, Italy colonized Eritrea, Somalia, Ethiopia, and Libya; which are countries heavily represented in the early years of the dataset. Italy built infrastructure using conscripted and coerced global labor.</p>
-
-<p class="spaced-paragraph">Italy imposed border and extracted precious resources.</p>
-
-<p class="spaced-paragraph">Even after the formal end of the colonial project, the mechanism of extraction remained.</p>
-
-<p class="spaced-paragraph">In Erithrea and Libya especially, it left behinf conditions that, decades later, would result in the people now crossing the water in the opposite direction.'</p>
-
-<p class="spaced-paragraph">Like many EU countries, Italy depends on migrant labor. The gricultural, domestic, construction, and factory sectors are all substantially operated by (many of them undocumented) migrant workers.</p>
-
-<p class="spaced-paragraph">They are needed but simultaneously excluded.</p>
-
-<p class="spaced-paragraph">The border policies maintain this reality.</p>
-
-<p class="spaced-paragraph">The data in these tiles represent all the people that have died or gone missing on their way to Italy.</p>
-
-<p class="spaced-paragraph">But what caused these incidents?</p>
-
-<p class="spaced-paragraph">Drowning accounts for the majority of the cases, which is indicated in the terracotta color.</p>
-
-<p class="spaced-paragraph">"Drowning" is dying through submmersion and the inhalation of water.</p>
-
-<p class="spaced-paragraph">For many of these people, this journey is their first time enocuntering the Sea.</p>
-
-<p class="spaced-paragraph">The occurrence of drowning often begins with the boat failing either by capsizing or deflating and ends in the dark water.</p>
-
-<p class="spaced-paragraph">Search and rescue missions along the Central Mediterranean Migration Route have been historically conducted at various points by different agencies including the Italian Navy, the Italian Coast Guard, Frontex, Médecins Sane Frontières, Sea-Watch, and more.</p>
-
-<p class="spaced-paragraph">However, since the 2017 agreement, the Italian government has increasingly restricted NGO rescue vessels through physical and legal barriers.</p>
-
-<p class="spaced-paragraph">The off-white fragments in the terrazzo tiles represent people whose cause of death is unknown.</p>
-
-<p class="spaced-paragraph">But the true number is undoubtedly much higher.</p>
-
-<p class="spaced-paragraph">If bodies disappear in the Sea, they leave no trace, even in a dataset.</p>
-
-<p class="spaced-paragraph">The majority of individuals in this dataset cannot be identified.</p>
-
-<p class="spaced-paragraph">Often they arrive without documents, or have their documents confiscated by smugglers, or even discard their documents purposefully because it can be more dangerous to be knowable than unknown.</p>
-
-<p class="spaced-paragraph">When unidentified bodies wash up on the Italian coast, they are buried in numbered graves in on the island of Lampedusa, or Sicily, or Calabria.</p>
-
-<p class="spaced-paragraph">Families and loved ones are left with no confirmation possibly forever.</p>
-
-<p class="spaced-paragraph">The dataset and this project do not trend toward any sort of resolution.</p>
-
-<p class="spaced-paragraph">The deaths are not declining.</p>
-
-<p class="spaced-paragraph">2023 showed the highest number of deaths and disappearances since the previous highs of 2016 and 2017.</p>
-
-<p class="spaced-paragraph">The projections for 2026 are much higher still.</p>
-
-<p class="spaced-paragraph">In the first quarter of 2026, the rate is already more than half of all 2025 cases.</p>
-
-<p class="spaced-paragraph">Terrazzo is a flooring technique that originated in 15th century Venice as a waay for laborers to use the waste marble and stone discarded by wealthy construction projects.</p>
-
-<p class="spaced-paragraph">These fragments were too small to be used on their own and so they were bound together in clay and polished to a smooth surface.</p>
-
-<p class="spaced-paragraph">This masonry method spread across the Mediterranean into North Africa, thorugh Libya, Eritrea, and Somalia to the cities Italy was building with colonial labor in the early 1900's.</p>
-
-<p class="spaced-paragraph">It is a material that carries movement within its surface.</p>
-
-<p class="spaced-paragraph">Fragments from different places bound together into something new.</p>
-
-<p class="spaced-paragraph">This acts as a metaphor for the individual journeys of migrants that are bound together to form a greater narrative.</p>
-
-<p class="spaced-paragraph">The colors in the surface were chosen from the material world of extraction.</p>
-            <!-- Add more paragraphs as needed -->
-        </div>
-    </div>
+	<script src="script.js"></script>
 </body>
+
 </html>
