@@ -75,9 +75,6 @@ window.addEventListener('scroll', () => {
 
 
 window.addEventListener('wheel', (e) => {
-	if (e.deltaX != 0) {
-		// return
-	}
 	e.preventDefault();
 	window.scrollTo({
 		top: 0,
