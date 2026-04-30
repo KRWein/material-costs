@@ -31,12 +31,11 @@ function animateCounter(target) {
 function init() {
 	descriptions.forEach(el => {
 		el.style.opacity = '0';
-		el.style.pointerEvents = 'none';
+		// el.style.pointerEvents = 'none';
 	});
 	titleBlock.style.opacity = '1';
-	titleBlock.style.pointerEvents = 'auto';
+	// titleBlock.style.pointerEvents = 'auto';
 }
-init();
 
 window.addEventListener('scroll', () => {
 	const scrollLeft = window.scrollX;
@@ -50,15 +49,15 @@ window.addEventListener('scroll', () => {
 
 	descriptions.forEach(el => {
 		el.style.opacity = '0';
-		el.style.pointerEvents = 'none';
+		// el.style.pointerEvents = 'none';
 	});
 
 	activeBlock.style.opacity = '1';
-	activeBlock.style.pointerEvents = 'auto';
+	// activeBlock.style.pointerEvents = 'auto';
 
 	if (activeIndex > 1) {
 		splash.style.opacity = '0';
-		splash.style.pointerEvents = 'none';
+		// splash.style.pointerEvents = 'none';
 	}
 
 	if (activeIndex > 1) {
@@ -86,3 +85,5 @@ window.addEventListener('wheel', (e) => {
 		behavior: "instant"
 	})
 })
+
+init();
