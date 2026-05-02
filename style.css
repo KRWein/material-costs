@@ -120,6 +120,8 @@ html, body {
 	background-color: black;
 	display: block;
 	line-height: 0;
+	user-select: none;
+	pointer-events: none;
 }
 
 /* Death counter */
