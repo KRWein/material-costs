@@ -6,6 +6,7 @@ const titleBlock = document.querySelector('.description-block.title-splash');
 const splash = document.querySelector('.description-block.splash');
 const deathCounter = document.getElementById('deathCounter');
 const counterNumber = document.getElementById('counterNumber');
+const counterYear = document.getElementById('counterYear');
 
 let currentDisplayed = 0;
 let targetCount = 0;
@@ -31,10 +32,8 @@ function animateCounter(target) {
 function init() {
 	descriptions.forEach(el => {
 		el.style.opacity = '0';
-		// el.style.pointerEvents = 'none';
 	});
 	titleBlock.style.opacity = '1';
-	// titleBlock.style.pointerEvents = 'auto';
 }
 
 window.addEventListener('scroll', () => {
@@ -49,21 +48,22 @@ window.addEventListener('scroll', () => {
 
 	descriptions.forEach(el => {
 		el.style.opacity = '0';
-		// el.style.pointerEvents = 'none';
 	});
 
 	activeBlock.style.opacity = '1';
-	// activeBlock.style.pointerEvents = 'auto';
 
 	if (activeIndex > 1) {
 		splash.style.opacity = '0';
-		// splash.style.pointerEvents = 'none';
 	}
 
 	if (activeIndex > 1) {
 		deathCounter.classList.add('visible');
 		const tileIndex = Math.min(Math.floor(scrollPercent * TOTAL_TILES), TOTAL_TILES - 1);
 		const newTarget = deathsByTile[tileIndex];
+
+		const year = 2014 + Math.floor((tileIndex * 2) / 12);
+		counterYear.textContent = year;
+
 		if (newTarget !== targetCount) {
 			targetCount = newTarget;
 			animateCounter(targetCount);

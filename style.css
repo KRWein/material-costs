@@ -83,6 +83,14 @@ html, body {
 .death-counter.visible {
 	opacity: 0.9;
 }
+.counter-year {
+	display: block;
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	opacity: 0.8;
+
+}
 .counter-number {
 	display: block;
 	font-size: 48px;
@@ -94,15 +102,15 @@ html, body {
 .counter-label {
 	display: block;
 	font-size: 11px;
+	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	margin-top: 4px;
-	opacity: 0.6;
+	opacity: 0.7;
 }
 
 /* Descriptions */
 .descriptions {
-
 	pointer-events: none;
 }
 .description-block {
@@ -174,8 +182,8 @@ html, body {
 }
 .description-block p {
 	font-size: 14px;
-	line-height: 1.45em;;
-	font-weight: 300;
+	line-height: 1.45em;
+	font-weight: 500;
 }
 
 @media only screen and (max-width: 600px) {
@@ -193,6 +201,5 @@ html, body {
 	.description-block p {
 		font-size: 16px;
 		font-weight: 500;
-		/* make font weight a liiiiiiittle 700er */
 	}
 }
